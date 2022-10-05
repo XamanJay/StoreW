@@ -5,8 +5,11 @@
 <p> Ejecutar : php artisan db:seed --class=ProductsSeeder</p>
 <p> Ejecutar : php artisan db:seed --class=UserwsSeeder </p>
 <p> La pantalla de Login esta desarrollada artesanalmente. Usuario: admin   Password: 3000...   </p>
-<p> La pantallas de grid de registros tienen la caracteristica de ordenarse en orden ascendente y descendente al dar clic en el encabezado de cada columna   </p>
-![image](https://user-images.githubusercontent.com/47259829/194116683-a5a3604c-1e8c-4f88-a735-75c5a70e7a25.png)
+<p> La pantallas de grid de registros tienen la caracteristica de ordenarse en orden ascendente y descendente al dar clic en el encabezado de cada columna   
+<img src="https://user-images.githubusercontent.com/47259829/194116683-a5a3604c-1e8c-4f88-a735-75c5a70e7a25.png" width="400" alt="">
+</p>
+
+
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
