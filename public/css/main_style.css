@@ -1,0 +1,114 @@
+@charset "utf-8";    /* CSS Document */
+
+body{
+  background:  #95c7f6;
+
+}
+
+
+:root {
+	
+	--litepicker-container-months-color-bg: rgba(240, 201, 25, 0.966) !important; 
+	}
+
+
+  .MOVIMIENTO_IZQ_CRECIENDO {
+    animation-duration: 3s;
+    animation-name: ollin;
+ 
+    position: relative;
+    animation-timing-function: ease-in-out;
+  }
+
+  
+.MOVIMIENTO_DESCENDIENDO {
+  /* animation-delay: 2s; */
+   animation-duration: 4s;
+   animation-name: ollintop;
+   position: relative;
+   animation-timing-function: ease-in-out;
+ }
+  
+@keyframes ollin {
+  from {
+    
+    width: 1%;
+     left: -800px;
+ 
+  }
+
+  to {
+    
+    width: 100%;
+      left: 0px;
+  
+  }
+}
+
+
+@keyframes ollintop {
+  from {
+    /*margin-left: -100%;*/
+   /* width: 0%; */
+    /* heigth: 0%; */
+ /*    left: -800px;  */
+    top: -800px;
+  }
+
+  to {
+    /* margin-left: 0%; */
+    /* width: 91%; */
+    /* height: 50% */
+      /* left: 0px; */
+      top: 0px;
+  }
+}
+
+.aqua_jay {
+  background: linear-gradient(
+    to bottom right,
+    #38FBEF, #5BAFFC);
+  }
+
+  
+.P_center {FONT: SIZE 8px;
+	text-align: center;}  
+
+
+.center_text_jvi {
+  text-align: center;
+ }
+
+ .center_objects_jvi {
+  margin: auto;
+  width: 50%;
+  
+}
+
+
+.Space {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.SpaceMini {
+  background-color: #0099cc0c;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
