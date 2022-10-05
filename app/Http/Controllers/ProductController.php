@@ -60,7 +60,7 @@ class ProductController extends Controller
         }else{
         $newImageName = 'nodisponible.png';
         }
-// dd('paso hasta aqui');
+     // dd('paso hasta aqui');
 
 
 
