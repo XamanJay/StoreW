@@ -49,18 +49,41 @@ class ProductController extends Controller
     {
 
         
+        //dd ($info_image);
+
+        $image_path = $_FILES["image_path"];
+
+        if ($_FILES['image_path']['name'] != null) {
+
+            $newImageName = time().'-0-'.$request->Nombre . '.' .$request->image_path->extension();
+            $request->image_path->move(public_path('images'),$newImageName);
+        }else{
+        $newImageName = 'nodisponible.png';
+        }
+// dd('paso hasta aqui');
 
 
-        $newImageName = time().'-0-'.$request->Nombre . '.' .$request->image_path->extension();
-        $request->image_path->move(public_path('images'),$newImageName);
+
+       /* if (is_null($info_image) || is_empty){
+            dd($info_image);
+        }
+        else{
+            $newImageName = time().'-0-'.$request->Nombre . '.' .$request->image_path->extension();
+            $request->image_path->move(public_path('images'),$newImageName);
+        }
+*/
+
+       
+       // $newImageName = time().'-0-'.$request->Nombre . '.' .$request->image_path->extension();
+       //  $request->image_path->move(public_path('images'),$newImageName);
 
         $products = Product::create([    
-            'Nombre'          => $request->input('Nombre'),
-            'SKU'       => $request->input('SKU'),
-            'Precio'         => $request->input('Precio'),
-            'Descripcion'    => $request->input('Descripcion'),
+            'Nombre'            => $request->input('Nombre'),
+            'SKU'               => $request->input('SKU'),
+            'Precio'            => $request->input('Precio'),
+            'Descripcion'       => $request->input('Descripcion'),
             'image_path'        => $newImageName,
-            'id_categories'  => $request->input('id_categories')
+            'id_categories'     => $request->input('id_categories')
             
         ]);
 
