@@ -133,12 +133,20 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         
+        $image_path = $_FILES["image_path"];
+
+        if ($_FILES['image_path']['name'] != null) {
+
+            $newImageName = time().'-0-'.$request->Nombre . '.' .$request->image_path->extension();
+            $request->image_path->move(public_path('images'),$newImageName);
+        }else{
+        $newImageName = 'nodisponible.png';
+        }
+
+        // $newImageName = time().'-0-'.$request->Nombre . '.' .$request->image_path->extension();
 
 
-        $newImageName = time().'-0-'.$request->Nombre . '.' .$request->image_path->extension();
-
-
-        $request->image_path->move(public_path('images'),$newImageName);
+        // $request->image_path->move(public_path('images'),$newImageName);
 
         
 
